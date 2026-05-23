@@ -100,7 +100,7 @@ export default function HowWeBuildSection() {
                         key={i}
                         className="flex items-center gap-2 bg-muted px-3 py-1.5 rounded-full text-xs"
                       >
-                        <Icon className="w-4 h-4" />
+                        <Icon />
                         <span>{tech.name}</span>
                       </div>
                     );

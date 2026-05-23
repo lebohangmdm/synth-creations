@@ -5,6 +5,7 @@ import { Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export const roboto = Roboto({
   subsets: ["latin"],
@@ -77,6 +78,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${roboto.variable} ${inter.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
       <body
         className={`${roboto.className} min-h-full flex flex-col antialiased`}
@@ -84,6 +86,10 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <WhatsAppButton
+          phoneNumber="27788931861"
+          message="Hello 👋 I need help with your services"
+        />
       </body>
     </html>
   );
