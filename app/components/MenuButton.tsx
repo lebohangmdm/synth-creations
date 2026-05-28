@@ -35,7 +35,7 @@ export function MenuButton() {
       <DropdownMenuContent
         align="end"
         sideOffset={8}
-        className="w-[calc(100vw-1rem)] mr-2 rounded-none p-2 md:hidden"
+        className="w-[calc(100vw-1rem)] mr-2 rounded-none p-2 md:hidden max-h-[80vh] overflow-y-auto"
       >
         {navItems.map((item) => (
           <DropdownMenuItem
