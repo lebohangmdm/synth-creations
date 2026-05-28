@@ -38,20 +38,26 @@ const ContactForm = () => {
     setSuccess("");
     setError("");
 
+    // normalize South African number
+    const normalizedContact = values.contact
+      .replace(/\s+/g, "") // remove spaces
+      .replace(/^\+27/, "0"); // convert +27 → 0
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           ...values,
+          contact: normalizedContact, // override here
         }),
       });
 
       const data = await response.json();
+      console.log(data);
 
       if (data.success) {
         setSuccess("Message sent successfully!");
