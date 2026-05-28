@@ -158,7 +158,7 @@ const ContactForm = () => {
             <Input
               id="contact"
               type="tel"
-              placeholder="+27 123 456 789"
+              placeholder="+27 78 123 4567"
               {...register("contact")}
               required
               className="rounded-xs md:rounded-sm border-none md:h-11 px-2 md:px-4"

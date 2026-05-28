@@ -19,7 +19,7 @@ const projects: Project[] = [
   {
     name: "Investo",
     href: "https://investo-investment.netlify.app",
-    image: "/investo-Photoroom.png",
+    image: "/investo-PhotoRoom.png",
   },
   {
     name: "Bondfolio",

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../../public/designers.png";
+import designer from "../../public/designers.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -10,10 +10,10 @@ const Choose = () => {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
           <div className="relative w-full aspect-square">
             <Image
-              src="/designers.png"
+              src={designer}
               alt="Designers"
               fill
-              className="object-cover rounded-sm shadow-md"
+              className="object-cover rounded-sm shadow-md h-w-full h-auto"
             />
           </div>
           <div className="flex flex-col gap-4 lg:gap-5">

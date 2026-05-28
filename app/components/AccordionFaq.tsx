@@ -77,7 +77,7 @@ const faqItems = [
     value: "hosting",
     title: "Is hosting and domain registration included?",
     content:
-      "Yes, we include a free domain for the first year and 1 month of free hosting.",
+      "Yes, we provide a free domain and hosting for the first month to help you get started quickly. After that, you can continue with our standard affordable plans.",
   },
   {
     value: "timeline",
